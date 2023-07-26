@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #ff9854;
+  --theme-linear-gradient: linear-gradient(90deg, #fa8c1d, #fcaf3f);
+  /* 1. 全局修改，任何用到该变量的属性都会改变 */
+  --van-tabbar-item-icon-size: 30px !important;
+  /* 修改全局搜索框左侧搜索图标颜色 */
+  --van-search-left-icon-color: var(--primary-color) !important;
+  --van-index-bar-index-active-color: var(--primary-color) !important;
+  /* 修改导航主题色 */
+  --van-primary-color: var(--primary-color) !important;
+  --van-nav-bar-title-text-color: var(--primary-color) !important;
+  --van-font-bold: 400;
+
+  --van-danger-color: var(--primary-color) !important;
+  /* dropdown-menu  */
+  --van-dropdown-menu-height: 44px !important;
+  --van-dropdown-menu-title-font-size: 13px !important;
+  --van-dropdown-menu-title-text-color: #333 !important;
+  /* sidebar */
+  --van-sidebar-width: 112px !important;
+  --van-sidebar-font-size: 14px !important;
+  --van-sidebar-text-color: #333 !important;
+  --van-sidebar-selected-text-color: var(--primary-color) !important;
+  --van-sidebar-background-color: #f8f8f8 !important;
+  --van-sidebar-selected-border-width: 4px !important;
+  --van-sidebar-selected-border-height: 4px !important;
+
+  --van-search-input-height: 30px !important;
+  --van-search-padding: 10px !important;
+  --van-search-left-icon-color: var(--primary-color) !important;
+  /* tabs */
+  --van-tabs-line-height: 50px !important;
+}
+
+body {
+  font-family: PingFangSC-Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  background-color: #f7f8fb;
+}
+
+.top-page {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.bottom-gray-line {
+  border-bottom: 1px solid #faf8f9;
+}
+
+.icon_check {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/detail/icon_check.png) 0 0 / 100% 100%;
+}
+
+.detail_icon_chat {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../images/detail/icon_chat.png) 0 0 / 100% 100%;
+}
+
+.detail_icon_order {
+  display: block;
+  width: 14px;
+  height: 17px;
+  background: url(../images/detail/icon_order.png) 0 0 / 100% 100%;
+}
+
+.ellipsis-text-1 {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-text-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
